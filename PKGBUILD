@@ -15,7 +15,7 @@
 
 _langname="python"
 _relname="soundfile"
-
+_casename="SoundFile"
 
 pkgname="${_langname}-${_relname}"
 pkgver=0.10.3.post1
@@ -47,14 +47,14 @@ sha512sums=(
 
 build() {
 
-  cd "${srcdir}/${_relname}-${pkgver}"
+  cd "${srcdir}/${_casename}-${pkgver}"
 
   python setup.py build
 }
 
 package() {
 
-  cd "${srcdir}/${_relname}-${pkgver}"
+  cd "${srcdir}/${_casename}-${pkgver}"
 
   python setup.py install --root="${pkgdir}" --skip-build --optimize=1
 
