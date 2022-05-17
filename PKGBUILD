@@ -19,7 +19,7 @@ _casename="SoundFile"
 
 pkgname="${_langname}-${_relname}"
 pkgver=0.10.3.post1
-pkgrel=3
+pkgrel=4
 pkgdesc="An audio library based on libsndfile, CFFI and NumPy"
 url="https://github.com/bastibe/python-soundfile"
 arch=(
